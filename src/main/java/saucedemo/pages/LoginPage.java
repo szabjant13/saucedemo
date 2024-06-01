@@ -1,5 +1,6 @@
 package saucedemo.pages;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,7 +20,10 @@ public class LoginPage {
     private WebElement loginButton;
 
     @FindBy(xpath = "//h3[.='Epic sadface: Sorry, this user has been locked out.']")
-    private WebElement errorMessage;
+    private WebElement lockedOutErrorMessage;
+
+    @FindBy(xpath = "//h3[.='Epic sadface: Username and password do not match any user in this service']")
+    private WebElement wrongCredentialsErrorMessage;
 
 
     // Constructor
@@ -40,8 +44,12 @@ public class LoginPage {
         loginButton.click();
     }
 
-    public boolean isErrorMessageDisplayed() {
-        return errorMessage.isDisplayed();
+    public boolean isLockedOutErrorMessageDisplayed() {
+        return lockedOutErrorMessage.isDisplayed();
+    }
+
+    public boolean isWrongCredentialsErrorMessageDisplayed() {
+        return wrongCredentialsErrorMessage.isDisplayed();
     }
 
     public void login(String username, String password) throws InterruptedException {
@@ -52,6 +60,28 @@ public class LoginPage {
             return;
         } else {
             throw new IllegalStateException("Login failed: Unexpected URL " + driver.getCurrentUrl());
+        }
+    }
+
+    public void wrongCredentialsLogin(String username, String password) throws InterruptedException{
+        enterUsername(username);
+        enterPassword(password);
+        clickLoginButton();
+        if(isWrongCredentialsErrorMessageDisplayed() ){
+            return;
+        } else{
+            throw new NoSuchElementException("Error message is not visible after failed login.");
+        }
+    }
+
+    public void lockedUserLogin(String username, String password) throws InterruptedException{
+        enterUsername(username);
+        enterPassword(password);
+        clickLoginButton();
+        if(isLockedOutErrorMessageDisplayed() ){
+            return;
+        } else{
+            throw new NoSuchElementException("Error message is not visible after failed login.");
         }
     }
 }
