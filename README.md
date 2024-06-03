@@ -19,8 +19,8 @@ Before you begin, ensure you have met the following requirements:
 - cd saucedemo-automation
 
 ### License 📜
-- This project is licensed under the MIT License - see the LICENSE file for details.
-- Feel free to explore, use, and contribute to this project. Happy Testing! 🚀
+- This project is licensed under the MIT License.
+- Feel free to explore, use, and contribute to this project. 🚀
 
 For any questions or suggestions, please open an issue or contact us.
 
