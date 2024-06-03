@@ -13,12 +13,12 @@ Before you begin, ensure you have met the following requirements:
 - Java Development Kit (JDK) - Download and Install JDK
 - Maven - Download and Install Maven
 - IDE - Preferably IntelliJ IDEA or Eclipse
-##Setup Instructions ⚙️
+### Setup Instructions ⚙️
 - Clone the repository:
 - git clone https://github.com/szabjant13/saucedemo.git
 - cd saucedemo-automation
 
-##License 📜
+### License 📜
 - This project is licensed under the MIT License - see the LICENSE file for details.
 - Feel free to explore, use, and contribute to this project. Happy Testing! 🚀
 
