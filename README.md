@@ -1,4 +1,5 @@
 SauceDemo Automation Project 🚀
+
 Welcome to the SauceDemo Automation Project! This repository showcases the implementation of Selenium with Java using the Page Object Model (POM) design pattern and ExtentReports for enhanced reporting. Whether you're a beginner or an experienced QA engineer, this project serves as a practical example to understand and implement automated testing.
 
 Table of Contents
@@ -28,32 +29,18 @@ Maven - Download and Install Maven
 IDE - Preferably IntelliJ IDEA or Eclipse
 Setup Instructions ⚙️
 Clone the repository:
-
-sh
-Kód másolása
 git clone https://github.com/your-username/saucedemo-automation.git
 cd saucedemo-automation
 Install dependencies:
-
-sh
-Kód másolása
 mvn clean install
 Set up your test configuration:
-
 Modify config.properties to set your desired configurations.
 Running Tests ▶️
 To execute the tests, you can use the following Maven command:
-
-sh
-Kód másolása
 mvn test
 Upon test completion, the ExtentReports will be generated in the test-output directory.
-
 Project Structure 📁
 Here's a brief overview of the project structure:
-
-bash
-Kód másolása
 saucedemo-automation/
 │
 ├── src/main/java
