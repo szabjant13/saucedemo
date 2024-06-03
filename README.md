@@ -15,7 +15,7 @@ Before you begin, ensure you have met the following requirements:
 - IDE - Preferably IntelliJ IDEA or Eclipse
 ##Setup Instructions ⚙️
 - Clone the repository:
-- git clone https://github.com/your-username/saucedemo-automation.git
+- git clone https://github.com/szabjant13/saucedemo.git
 - cd saucedemo-automation
 
 ##License 📜
