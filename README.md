@@ -22,6 +22,6 @@ Before you begin, ensure you have met the following requirements:
 - This project is licensed under the MIT License.
 - Feel free to explore, use, and contribute to this project. 🚀
 
-For any questions or suggestions, please open an issue or contact us.
+For any questions or suggestions, please open an issue or contact me.
 
 Happy coding! 💻✨
